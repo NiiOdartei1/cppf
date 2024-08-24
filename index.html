@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="nsdA_ITLbmK5mitENi3atBEQ9BtI1C7f4UOwlr4PZ_I" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christ Pentecostal Praise Family</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body, html {
@@ -14,22 +12,23 @@
             margin: 0;
             font-family: 'Poppins', sans-serif;
         }
-
+        
         .navbar-brand img {
             max-height: 50px;
             width: auto;
         }
-
+    
         .navbar {
             background-color: #003366; /* Blue color for navbar */
         }
-
+    
         .navbar-nav .nav-link {
             color: #fff !important;
         }
-
+    
         .intro {
             background-image: url('https://raw.githubusercontent.com/NiiOdartei1/cppf/main/images/FB_IMG_1629712867392.jpg');
+            background-image: url('./images/FB_IMG_1629712867392.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -41,20 +40,20 @@
             align-items: center;
             text-align: center;
         }
-
+    
         .intro h1 {
             font-size: 3.5em;
             font-weight: bold;
             color: gold;
         }
-
+    
         .intro p {
             font-family: Helvetica;
             font-size: 1.5em;
             color: gold;
             font-weight: 900;
         }
-
+    
         .hero-btn {
             background-color: #003366; /* Blue button */
             color: gold;
@@ -63,49 +62,49 @@
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
-
+    
         .hero-btn:hover {
             background-color: orange; /* Change hover color to orange */
             color: #000;
         }
-
+    
         .hero-btn:active {
             background-color: darkorange; /* Darker shade for active state */
         }
-
+    
         .ministers {
             padding: 30px;
             background-color: #f0f0f0;
             color: #003366; /* Blue text */
         }
-
+    
         .ministers h1 {
             font-size: 2.5em;
             margin-bottom: 20px;
         }
-
+    
         .ministers h3 {
             font-size: 2em;
             margin-bottom: 20px;
         }
-
+    
         .ministers-col {
             display: flex;
             margin-bottom: 20px;
         }
-
+    
         .ministers-col img {
             max-width: 150px;
             margin-right: 20px;
         }
-
+    
         .ctd {
             padding: 10px;
             background-color: #003366; /* Blue background */
             color: gold;
             text-align: center;
         }
-
+    
         footer {
             background-color: #002244; /* Darker blue for footer */
             color: gold;
@@ -115,43 +114,104 @@
             bottom: 0;
             width: 100%;
         }
-
+    
         footer p {
             margin: 0;
             font-size: 1em;
         }
-
+    
         footer .social-icons {
             margin: 10px 0;
         }
-
+    
         footer .social-icons a {
             color: gold;
             font-size: 1.2em;
             margin: 0 8px;
             text-decoration: none;
         }
-
+    
         footer .social-icons a:hover {
             color: #fff;
         }
-
-        @media (max-width: 768px) {
-            .text-box h1, .text-box h2 {
+    
+        /* Ensure navbar links are right-aligned */
+        .navbar-nav {
+            margin-left: auto; /* Aligns items to the right */
+        }
+    
+        /* Additional styles for smaller screens */
+        @media (max-width: 992px) {
+            .intro h1 {
+                font-size: 2.5em;
+            }
+    
+            .intro p {
+                font-size: 1.2em;
+            }
+    
+            .ministers h1 {
+                font-size: 2em;
+            }
+    
+            .ministers h3 {
                 font-size: 1.5em;
             }
-
+        }
+    
+        @media (max-width: 768px) {
+            .navbar-nav {
+                margin-left: 0; /* Reset margin-left for smaller screens */
+                text-align: right; /* Ensure text is aligned to the right */
+            }
+    
+            .navbar-collapse {
+                text-align: right; /* Align items within the collapse */
+            }
+    
             .ministers-col {
                 flex-direction: column;
                 align-items: center;
             }
-
+    
             .ministers-col img {
                 margin: 0 0 10px 0;
+            }
+    
+            .intro h1 {
+                font-size: 2em;
+            }
+    
+            .intro p {
+                font-size: 1em;
+            }
+        }
+    
+        @media (max-width: 576px) {
+            .hero-btn {
+                padding: 8px 16px;
+                font-size: 0.9em;
+            }
+    
+            .intro h1 {
+                font-size: 1.5em;
+            }
+    
+            .intro p {
+                font-size: 0.9em;
+            }
+    
+            .ministers h1 {
+                font-size: 1.5em;
+            }
+    
+            .ministers h3 {
+                font-size: 1.2em;
             }
         }
     </style>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
@@ -169,7 +229,7 @@
                     <li class="nav-item"><a class="nav-link" href="./Database v.2.1.0.rar" download="CPPF DATABASE">Download Software</a></li>
                 </ul>
             </div>
-        </nav>
+        </nav>        
     </header>
 
     <main>
@@ -225,7 +285,7 @@
             <a href="https://x.com/cppfofficial" class="fab fa-twitter"></a>
             <a href="https://www.instagram.com/cppfofficial/" class="fab fa-instagram"></a>
             <a href="https://www.youtube.com/@cppfofficial" class="fab fa-youtube"></a>
-            <a href="https://www.linkedin.com/in/cppfofficial/" class="fab fa-linkedin"></a>
+            <a href="https://wa.me/233257244264" class="fab fa-whatsapp" target="_blank" title="Chat with us on WhatsApp"></a>
         </div>
     </footer>
 
