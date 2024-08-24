@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assemblies - Christ Pentecostal Praise Family</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body, html {
@@ -14,49 +13,19 @@
             margin: 0;
             font-family: 'Poppins', sans-serif;
         }
-
+        
+        .navbar-brand img {
+            max-height: 50px;
+            width: auto;
+        }
+    
         .navbar {
             background-color: #003366; /* Blue color for navbar */
         }
-
+    
         .navbar-nav .nav-link {
             color: #fff !important;
-        }
-
-        .header3 {
-            background-color: #003366;
-            padding: 10px;
-        }
-
-        .header3 img {
-            max-height: 50px; /* Adjust logo size */
-            width: auto;
-        }
-
-        .nav-links {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
-
-        .nav-links ul {
-            display: flex;
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .nav-links li {
-            margin-left: 20px;
-        }
-
-        .nav-links a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .nav-links a:hover {
-            text-decoration: underline;
+            text-align: right;
         }
 
         .main-content {
@@ -124,6 +93,22 @@
             color: #fff;
         }
 
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .nav-links {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .nav-links ul {
+                flex-direction: column;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+        }
+
         @media (max-width: 768px) {
             .Assemblies-col, .Ministries-col {
                 flex-direction: column;
@@ -132,18 +117,29 @@
 
             .Assemblies-col img, .Ministries-col img {
                 margin-bottom: 10px;
+                height: auto; /* Adjust height for smaller screens */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .Assemblies h1, .Ministries h1 {
+                font-size: 1.8em; /* Slightly smaller font size on extra-small screens */
+            }
+
+            footer p {
+                font-size: 0.9em; /* Smaller font size for a compact look */
             }
         }
     </style>
 </head>
 <body>
-    <header class="header3">
+    <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="index.html"><img src="images/cppf.jpg" alt="Christ Pentecostal Praise Family Logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse nav-links" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="./service.html">Services</a></li>
@@ -153,7 +149,7 @@
                     <li class="nav-item"><a class="nav-link" href="./Database v.2.1.0.rar" download="CPPF DATABASE">Download Software</a></li>
                 </ul>
             </div>
-        </nav>
+        </nav>        
     </header>
 
     <main class="main-content">
@@ -209,7 +205,9 @@
         <div class="social-icons">
             <a href="https://web.facebook.com/cppfofficial/?_rdc=1&_rdr" class="fab fa-facebook-f"></a>
             <a href="https://x.com/cppfofficial" class="fab fa-twitter"></a>
-            <a href="https://www.instagram.com/cppf_official/" class="fab fa-instagram"></a>
+            <a href="https://www.instagram.com/cppfofficial/" class="fab fa-instagram"></a>
+            <a href="https://www.youtube.com/@cppfofficial" class="fab fa-youtube"></a>
+            <a href="https://wa.me/233257244264" class="fab fa-whatsapp" target="_blank" title="Chat with us on WhatsApp"></a>
         </div>
     </footer>
 
